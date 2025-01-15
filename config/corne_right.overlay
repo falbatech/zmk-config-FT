@@ -1,8 +1,0 @@
-/ {
-    underglow {
-        compatible = "zmk,rgb-underglow";
-        label = "RGB Underglow Right";
-        pin = <P0.06>;  // Pin danych RGB dla prawej połówki (sprawdź, czy to właściwy pin)
-        num_leds = <27>;  // Liczba diod na prawej połówce
-    };
-};
