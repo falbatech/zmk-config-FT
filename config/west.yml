@@ -2,12 +2,23 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+      # Additional modules containing boards/shields/custom code can be listed here as well.
+      # See:
+      # - https://zmk.dev/docs/features/modules
+      # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
+    - name: urob
+      url-base: https://github.com/urob
+      # to get the zmk-auto-layer for num-word feature
   projects:
+    - name: eyelash_corne
+      url: https://github.com/a741725193/zmk-new_corne
+      revision: main
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: zmk-auto-layer
+      remote: urob
+      revision: main # set to same version as zmk
   self:
     path: config
