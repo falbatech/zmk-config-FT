@@ -22,7 +22,14 @@
             quick-tap-ms = <180>;
             global-quick-tap;
         };
-
+ADJ {
+    display-name = "System";
+    bindings = <
+        &rgb_ug_toggle &rgb_ug_mode &rgb_ug_hue_up &rgb_ug_hue_down
+        &rgb_ug_brightness_up &rgb_ug_brightness_down &trans &trans
+        &trans &trans &trans &bootloader
+    >;
+};
         para: para {
             compatible = "zmk,behavior-tap-dance";
             label = "PARA";
