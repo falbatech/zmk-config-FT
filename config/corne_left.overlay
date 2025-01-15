@@ -1,0 +1,8 @@
+/ {
+    underglow {
+        compatible = "zmk,rgb-underglow";
+        label = "RGB Underglow Left";
+        pin = <P0.06>;  // Pin danych RGB dla lewej połówki (sprawdź, czy to właściwy pin)
+        num_leds = <27>;  // Liczba diod na lewej połówce
+    };
+};
